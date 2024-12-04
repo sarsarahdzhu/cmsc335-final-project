@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Ideal Waifu</title>
+</head>
+<body>
+  <h1>Your Ideal Waifu</h1>
+
+  <% if (waifuImageUrl) { %>
+    <img src="<%= waifuImageUrl %>" alt="Waifu Image" style="max-width: 500px; height: auto;">
+  <% } else { %>
+    <p>No waifu found for the given preference.</p>
+  <% } %>
+
+  <a href="/">Try again</a>
+</body>
+</html>
+
